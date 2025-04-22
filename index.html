@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>アプリ起動中...</title>
+</head>
+<body>
+  <p>アプリを起動しています...</p>
+
+  <script>
+    window.onload = function() {
+      const isAndroid = /android/i.test(navigator.userAgent);
+
+      if (isAndroid) {
+        window.location.href = 'https://deeplink-test-e53b3c0ebf7b.herokuapp.com/cmm-bff/common/auth/deeplink/adfadsf';
+      } else {
+        window.location.href = '/'; // 非 Android 跳回首页
+      }
+    };
+  </script>
+</body>
+</html>
